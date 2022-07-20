@@ -39,8 +39,6 @@ func SetupRouter(app *fiber.App) {
 			log.Fatal(err)
 		}
 
-		// err = database.CreateUrl(&data)
-
 		return c.Status(fiber.StatusCreated).JSON(data)
 	})
 
